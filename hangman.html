@@ -35,10 +35,10 @@
                 var guess = prompt("Guess a letter, or click cancel to stop playing");
                 var guessLowerCase = guess.toLowerCase();
 
-                if (guess===null){
+                if (guessLowerCase===null){
                     //exit the game loop 
                     break;
-                } else if (guess.length !== 1){
+                } else if (guessLowerCase.length !== 1){
                     alert("Please enter a single letter");
                 } else {
                     //update the game status witht the guess 
