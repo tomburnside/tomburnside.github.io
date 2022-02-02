@@ -33,6 +33,7 @@
 
                 //get a guess from the player 
                 var guess = prompt("Guess a letter, or click cancel to stop playing");
+                var guessLowerCase = guess.toLowerCase();
 
                 if (guess===null){
                     //exit the game loop 
@@ -42,8 +43,8 @@
                 } else {
                     //update the game status witht the guess 
                     for (var j=0; j<word.length; j++){
-                        if(word[j]===guess){
-                            answerArray[j] = guess;
+                        if(word[j]===guessLowerCase){
+                            answerArray[j] = guessLowerCase;
                             remainingLetters--;
                         }
                     }
