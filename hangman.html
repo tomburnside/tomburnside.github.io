@@ -32,10 +32,13 @@
                 //show the player their progress 
                 alert(answerArray.join(" ") /n guessLimit + " guesses left");
 
+                guessLimit--;
+                
                 //get a guess from the player 
                 var guess = prompt("Guess a letter, or click cancel to stop playing");
                 var guessLowerCase = guess.toLowerCase();
 
+                
                 if (guessLowerCase===null){
                     //exit the game loop 
                     break;
@@ -50,7 +53,6 @@
                         }
                            
                     }
-                     guessLimit--;
                 }
                 //the end of the game loop
             }
