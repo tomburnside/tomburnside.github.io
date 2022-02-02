@@ -25,12 +25,13 @@
             }
 
             var remainingLetters = word.length;
-            var guessLimit
+            var guessLimit = 10;
 
             //the game loop
             while(remainingLetters > 0 && guessLimit > 0){
                 //show the player their progress 
-                alert(answerArray.join(" "));
+                alert(answerArray.join(" ") +
+                     guessLimit + " guesses left");
 
                 //get a guess from the player 
                 var guess = prompt("Guess a letter, or click cancel to stop playing");
