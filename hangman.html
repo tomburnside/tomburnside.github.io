@@ -25,9 +25,10 @@
             }
 
             var remainingLetters = word.length;
+            var guessLimit
 
             //the game loop
-            while(remainingLetters > 0){
+            while(remainingLetters > 0 && guessLimit > 0){
                 //show the player their progress 
                 alert(answerArray.join(" "));
 
@@ -48,6 +49,7 @@
                             remainingLetters--;
                         }
                     }
+                guessLimit--;
                 }
                 //the end of the game loop
             }
