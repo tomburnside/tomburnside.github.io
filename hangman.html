@@ -30,7 +30,7 @@
             //the game loop
             while(remainingLetters > 0 && guessLimit > 0){
                 //show the player their progress 
-                alert(answerArray.join(" "));
+                alert(answerArray.join(" ")+ "\n You have " + guessLimit + " guesses remaining");
 
                 guessLimit--;
                 
@@ -58,8 +58,12 @@
             }
 
             //show the answer and congruatulate the player
+            if(remainingLetters <= guessLimit){
             alert(answerArray.join(" "));
             alert("Good job! The answer was " + word);
+            } else{
+            alert("You ran out of guesses")
+            }
         </script>
     </body>
 </html>
