@@ -1,5 +1,6 @@
 .background{
     background-image: url("./Hero.jpg");
+    background-size: cover;
     padding: 175px 0;
 }
 
