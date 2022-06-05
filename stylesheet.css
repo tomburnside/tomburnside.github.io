@@ -1,8 +1,9 @@
 .background{
-    background: #008080;
+    background-image: url("./Hero.jpg");
     padding: 175px 0;
 }
 
 .hero-text{
     color: white;
+    text-shadow: 2px 2px #424242;
 }
